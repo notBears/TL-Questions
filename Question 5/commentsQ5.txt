@@ -1,0 +1,11 @@
+For the question 5 test I began by trying to figure out how the code for spell effects works
+and finding what files were needed to make a spell function. Documentation on spells was not easy to 
+find, but I was able to find a tutorial on the OTLand forums that explained the basic parts of 
+the code for a spell. Looking at the question video I decided to try and get the diamond shape
+down first, and then figure out how to animate it later. This was honestly the most difficult part,
+the creation of the combatArea took lots of trial and error with changing the size and shape of the
+array to try and get the correct diamond shape. After this I took a break and worked on question 7
+which is where I learned about the addEvent() function. I knew that I would need to create some kind of
+loop and loop through an array of areas to create the animated effect, but I was not sure what kind of
+wait or pause equivalent tfs and otc had. With addEvent I could loop through the list of areas one at a
+time with a pause inbetween creating a keyframed animation effect.
