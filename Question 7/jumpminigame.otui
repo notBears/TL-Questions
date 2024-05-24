@@ -1,0 +1,23 @@
+JumpButton < Button
+  width: 64
+  x: 500
+  y: 375
+  @onClick: moveButton(self)
+
+MainWindow
+  id: jumpminigameWindow
+  !text: tr('JUMP!')
+  size: 550 400
+
+  JumpButton
+    id: jumpButton
+    !text: tr('JUMP!')
+
+  Button
+    id: buttonCancel
+    !text: tr('Close')
+    width: 64
+    anchors.right: parent.right
+    anchors.bottom: parent.bottom
+    @onClick: toggle()
+

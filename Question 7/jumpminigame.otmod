@@ -1,0 +1,8 @@
+Module
+  name: game_jumpminigame
+  description: Window with moving button game
+  author: James, Balden
+  sandboxed: true
+  scripts: [ jumpminigame ]
+  @onLoad: init()
+  @onUnload: terminate()

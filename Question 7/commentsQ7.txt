@@ -1,0 +1,18 @@
+For question 7 I reviewed the provided video and tried to break down what I would
+need to build to create the same effect. I knew that I would need a UI window of 
+some kind that could hold a button, and I knew I would need to create two functions.
+One function to continually move the button to the left and another function to move
+the button back to the right and place it at a random y location. I began by looking 
+at the documentation for modules in the github for the OTClient. This provided a base, but as I was
+still trying to understand how everything pieced together it left some gaps I couldn't cross. Instead
+I took a module that I knew worked in the client and created a copy. Then I disassembled it down to the
+most basic components of a window and a close button. While dismantling the .otui file I was able to see
+how to call a function when a button was clicked. From the function I could use the button widget to change
+any property in the .otui file from the function. This allowed me to change the position of the button to 
+a random y location and an x location on the right of the window whenever the button was pressed. The last
+piece to figure out was how to call a function in a loop as long as the window was open. I searched for information
+about this and discovered the addEvent function and that the event class had a cycleEvent() function that sounded
+like what I wanted to do. I created a function called leftShift() that would continually move the button to the 
+left as long as the module was open. I had some trouble getting it to call the function correctly. I was referencing the button
+widget from the init() function of the module, but that kept giving me errors. I decided to move the reference to the 
+button inside the leftShift() function and this created the desired effect without anymore errors.
